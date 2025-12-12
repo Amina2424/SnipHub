@@ -31,7 +31,7 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone <repository-url>
-   cd snp-frequency-bot
+   cd sniphub
    ```
 2. Создайте файл конфигурации:
    ```bash
