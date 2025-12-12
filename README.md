@@ -83,16 +83,17 @@
 **Структура проекта**
 
 ```
-src/
-├── snp_bot.py                # Основной файл бота
-├── Dockerfile                #  Docker
-├── docker-compose.yml        # Конфигурация Docker Compose
-├── requirements.txt          # Зависимости Python
-├── .env                      # Файл конфигурации
-└── README.md                 # Документация
-ouput/
-├── rs10
-└── rs7412                    # Примеры запросов
+Sniphub
+├── Dockerfile                    #  Docker
+├── .gitignore
+├── src/
+    ├── snp_bot.py                # Основной файл бота
+    ├── requirements.txt          # Зависимости Python
+    ├── .env                      # Файл конфигурации
+├── ouput/
+    ├── rs10
+    └── rs7412                    # Примеры запросов
+└── README.md                     # Документация
 ```
 
 🤖 **Команды бота**
