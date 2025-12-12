@@ -655,7 +655,7 @@ async def main() -> None:
             "• Визуализация результатов\n\n"
             
             "<b>Источник данных:</b>\n"
-            "• dbSNP: https://api.ncbi.nlm.nih.gov/variation/v0/refsnp\n\n"
+            "• dbSNP: https://www.ncbi.nlm.nih.gov/snp/\n\n"
             
             "В случае обнаружения багов обращайтесь в поддержку телеграмма: @etcetera_mi"
         )
