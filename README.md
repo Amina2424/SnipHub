@@ -34,16 +34,17 @@
    ```
 2. Создайте файл конфигурации:
    ```bash
-   cp .env.example .env
+   cp .env
    ```
 3. Настройте конфигурацию в файле .env:
    ```
-   TELEGRAM_BOT_TOKEN=токен_бота
-   REDIS_URL=redis://localhost:6379/0 NCBI_API_BASE=https://api.ncbi.nlm.nih.gov/variation/v0/refsnp
-   NCBI_API_TIMEOUT=30
-   CACHE_TTL=86400
-   MAX_REQUESTS_PER_HOUR=50
-   EXAMPLE_RSIDS=rs7755898,rs429358,rs7412
+TELEGRAM_BOT_TOKEN=токен_бота
+REDIS_URL=
+NCBI_API_BASE=https://api.ncbi.nlm.nih.gov/variation/v0/refsnp
+NCBI_API_TIMEOUT=30
+CACHE_TTL=86400
+MAX_REQUESTS_PER_HOUR=50
+EXAMPLE_RSIDS=rs7755898,rs429358,rs7412
    ```
 4. Соберите и запустите Docker контейнер:
    ```bash
