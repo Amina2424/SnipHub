@@ -38,20 +38,22 @@
    ```
 3. Настройте конфигурацию в файле .env:
    ```
-TELEGRAM_BOT_TOKEN=токен_бота
-REDIS_URL=
-NCBI_API_BASE=https://api.ncbi.nlm.nih.gov/variation/v0/refsnp
-NCBI_API_TIMEOUT=30
-CACHE_TTL=86400
-MAX_REQUESTS_PER_HOUR=50
-EXAMPLE_RSIDS=rs7755898,rs429358,rs7412
+     TELEGRAM_BOT_TOKEN=токен_бота
+     REDIS_URL=
+     NCBI_API_BASE=https://api.ncbi.nlm.nih.gov/variation/v0/refsnp
+     NCBI_API_TIMEOUT=
+     CACHE_TTL=
+     MAX_REQUESTS_PER_HOUR=
+     EXAMPLE_RSIDS=
    ```
 4. Соберите и запустите Docker контейнер:
-   ```bash
+   ```
+   bash
    docker-compose up --build -d
    ```
 5. Проверьте работу бота:
-   ```bash
+   ```
+   bash
    docker-compose logs -f bot
    ```
 6. Найдите бота в Telegram и отправьте команду `/start`
@@ -61,12 +63,13 @@ EXAMPLE_RSIDS=rs7755898,rs429358,rs7412
 **Требования:** Python 3.9+, Redis
 
 1. Установите зависимости:
-   ```bash
+   ```
+   bash
    pip install -r requirements.txt
    ```
 2. Установите и запустите Redis:
-   ```bash
-
+   ```
+   bash
    sudo apt-get install redis-server
    sudo systemctl start redis
    
